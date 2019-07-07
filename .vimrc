@@ -18,6 +18,9 @@ nmap <Leader>j <C-W>j
 nmap <Leader>k <C-W>k
 nmap <Leader>l <C-W>l
 
+" Save file with cs
+nmap cs :w<CR>
+
 " Remap escape to jj
 imap jj <Esc>
 
@@ -39,6 +42,3 @@ set hlsearch
 
 " Indent with 2 spaces in cpp files
 autocmd Filetype cpp setlocal shiftwidth=2 softtabstop=2 expandtab
-
-" Save file with cs
-nmap cs :w<CR>
