@@ -10,3 +10,8 @@ git clone git@github.com:LukasJoswiak/dotfiles.git ~/dotfiles
 ```
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ```
+
+## tmux
+```
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+```
