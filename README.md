@@ -15,3 +15,8 @@ ln -s ~/dotfiles/.vimrc ~/.vimrc
 ```
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ```
+
+## Alacritty
+```
+ln -s ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
+```
