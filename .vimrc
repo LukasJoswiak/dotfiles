@@ -31,6 +31,9 @@ syntax on
 set number
 set relativenumber
 
+" Show row and column information
+set ruler
+
 set autoindent
 
 set expandtab
