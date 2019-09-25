@@ -45,3 +45,6 @@ set hlsearch
 
 " Indent with 2 spaces in cpp files
 autocmd Filetype cpp setlocal shiftwidth=2 softtabstop=2 expandtab
+
+" Indent with 2 spaces in C files
+autocmd Filetype c setlocal shiftwidth=2 softtabstop=2 expandtab
