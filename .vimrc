@@ -46,14 +46,17 @@ set softtabstop=4
 set hlsearch
 
 " Indent with 2 spaces in cpp files
-autocmd Filetype cpp setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType cpp setlocal shiftwidth=2 softtabstop=2 expandtab
 
 " Indent with 2 spaces in C files
-autocmd Filetype c setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType c setlocal shiftwidth=2 softtabstop=2 expandtab
+
+" Indent with 2 spaces in Arduino files
+autocmd FileType arduino setlocal shiftwidth=2 softtabstop=2 expandtab
 
 " Ledger shortcuts
 " Indent with 2 spaces in ledger files
-autocmd Filetype ledger setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType ledger setlocal shiftwidth=2 softtabstop=2 expandtab
 
 " Toggle between posting status
 au FileType ledger nnoremap <Leader>rd :call ledger#transaction_state_toggle(line('.'), ' *!')<CR>
