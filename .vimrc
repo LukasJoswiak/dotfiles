@@ -3,6 +3,7 @@ call plug#begin()
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
+Plug 'tpope/vim-obsession'
 Plug 'ledger/vim-ledger'
 
 call plug#end()
@@ -13,6 +14,9 @@ let mapleader = ","
 nmap ; :Buffers<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader>r :Tags<CR>
+
+" Disable swap files
+set noswapfile
 
 " Move between Vim panes
 nmap <Leader>h <C-W>h
@@ -38,6 +42,7 @@ set ruler
 
 set autoindent
 
+" Indent with spaces
 set expandtab
 set shiftwidth=4
 set softtabstop=4
