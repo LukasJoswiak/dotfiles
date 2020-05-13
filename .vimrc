@@ -50,6 +50,19 @@ set softtabstop=4
 " Enable highlight on search
 set hlsearch
 
+" Hide buffers instead of abondoning them
+set hidden
+
+" Enable persistent undo
+if has('persistent_undo')
+    let undodir = expand('~/.vim/undo')
+    if !isdirectory(undodir)
+        call mkdir(undodir)
+    endif
+    let &undodir=undodir
+    set undofile
+endif
+
 " Indent with 2 spaces in cpp files
 au FileType cpp setlocal shiftwidth=2 softtabstop=2 expandtab
 
