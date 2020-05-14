@@ -50,7 +50,7 @@ set softtabstop=4
 " Enable highlight on search
 set hlsearch
 
-" Hide buffers instead of abondoning them
+" Hide buffers instead of abandoning them
 set hidden
 
 " Enable persistent undo
