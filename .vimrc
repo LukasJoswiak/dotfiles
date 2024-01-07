@@ -72,30 +72,3 @@ au FileType c setlocal shiftwidth=2 softtabstop=2 expandtab
 
 " Indent with 2 spaces in Arduino files
 au FileType arduino setlocal shiftwidth=2 softtabstop=2 expandtab
-
-" Ledger shortcuts
-" Indent with 2 spaces in ledger files
-au FileType ledger setlocal shiftwidth=2 softtabstop=2 expandtab
-
-" Treat files with the .dat extension as ledger files
-au BufRead,BufNewFile *.dat setfiletype ledger
-
-" Toggle between posting status
-au FileType ledger nnoremap <Leader>rd :call ledger#transaction_state_toggle(line('.'), ' *!')<CR>
-" Transaction date shortcuts
-au FileType ledger nnoremap <Leader>r1 :call ledger#transaction_date_set(line('.'), 'primary')<CR>
-au FileType ledger nnoremap <Leader>r2 :call ledger#transaction_date_set(line('.'), 'auxiliary')<CR>
-au FileType ledger nnoremap <Leader>r3 :call ledger#transaction_date_set(line('.'), 'unshift')<CR>
-
-au FileType ledger inoremap <silent> <Tab> <C-r>=ledger#autocomplete_and_align()<CR>
-au FileType ledger vnoremap <silent> <Tab> :LedgerAlign<CR>
-
-" Enable folding by default for ledger files.
-au FileType ledger setlocal foldmethod=syntax
-
-" Use $ as default commodity
-let g:ledger_default_commodity = '$'
-" No blank line between folded transactions
-let g:ledger_fold_blanks = 1
-" Autocomplete based on detail, not alphabetically
-let g:ledger_detailed_first = 1
