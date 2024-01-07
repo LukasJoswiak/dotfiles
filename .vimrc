@@ -16,43 +16,28 @@ nmap <Leader>t :Files<CR>
 nmap <Leader>r :Rg<CR>
 nmap <Leader>m :Marks<CR>
 
-" Disable swap files
-set noswapfile
-
 " Move between Vim panes
 nmap <Leader>h <C-W>h
 nmap <Leader>j <C-W>j
 nmap <Leader>k <C-W>k
 nmap <Leader>l <C-W>l
 
-" Save file with cs
-nmap cs :w<CR>
+nmap cs :w<CR>     " Save file with cs
+imap jj <Esc>      " Remap escape to jj
 
-" Remap escape to jj
-imap jj <Esc>
-
-" Turn on syntax highlighting
-syntax on
-
-" Enable line numbers
-set number
-set relativenumber
-
-" Show row and column information
-set ruler
+set noswapfile     " Disable swap files
+syntax on          " Turn on syntax highlighting
+set number         " Enable line numbers
+set relativenumber " Current line shows absolute line number
+set ruler          " Show row and column information
+set hlsearch       " Enable highlight on search
+set hidden         " Hide buffers instead of abandoning them
 
 set autoindent
-
-" Indent with spaces
-set expandtab
+set expandtab      " Expand tabs to spaces
+set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-
-" Enable highlight on search
-set hlsearch
-
-" Hide buffers instead of abandoning them
-set hidden
 
 " Enable persistent undo
 if has('persistent_undo')
