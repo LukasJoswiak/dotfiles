@@ -22,8 +22,10 @@ nmap <Leader>j <C-W>j
 nmap <Leader>k <C-W>k
 nmap <Leader>l <C-W>l
 
-nmap cs :w<CR>     " Save file with cs
-imap jj <Esc>      " Remap escape to jj
+" Save file with cs
+nmap cs :w<CR>
+" Remap escape to jj
+imap jj <Esc>
 
 set noswapfile     " Disable swap files
 syntax on          " Turn on syntax highlighting
